@@ -84,6 +84,7 @@ void deleteByPos(int pos)
     free(temp);
     count--;
 }
+
 void searchByKey(int key)
 {
     if(header->next== header)
@@ -105,6 +106,7 @@ void searchByKey(int key)
     }
     printf("Key not found\n");
 }
+
 void display()
 {
     if(header->next== header)
@@ -139,23 +141,29 @@ void main()
                     display();
                     printf("COUNT=%d\n", count);
                     break;
+
             case 2: printf("Enter value: ");
                     scanf("%d", &value);
                     insertRear(value);
                     display();
                     printf("COUNT=%d\n", count);
                     break;
+
             case 3: printf("Enter position to be deleted: ");
                     scanf("%d", &pos);
                     deleteByPos(pos);
                     display();
                     break;
+
             case 4: printf("Enter key to be searched: ");
                     scanf("%d", &key);
                     searchByKey(key);
                     display();
                     break;
-            case 5: exit(0);
+
+            case 5: printf("Exiting..\n");
+                    exit(0);
+
             default: printf("invalid choice!");
         }
     }
