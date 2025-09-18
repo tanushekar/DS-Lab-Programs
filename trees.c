@@ -1,3 +1,14 @@
+/*
+  Binary Search Tree:
+  1.Construction
+  2.Traversals (DFS and BFS) 
+  3.Searching a node by key and displaying its info along with its parent if exists, otherwise a suitable message 
+  4.Counting all nodes 
+  5.Finding height 
+  6.Finding node with the maximum key value and printing the node details along with the parent 
+  7.Searching a node by key and deleting if it exists (node to be deleted may be leaf or non-leaf with one child or two children) 
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 
