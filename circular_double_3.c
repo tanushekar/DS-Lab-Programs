@@ -133,24 +133,30 @@ void main()
                     display();
                     printf("\nCount= %d", count);
                     break;
+
             case 2: printf("Enter value: ");
                     scanf("%d", &value);
                     insertFront(value);
                     display();
                     printf("COUNT=%d\n", count);
                     break;
+
             case 3: printf("Enter value: ");
                     scanf("%d", &value);
                     insertRear(value);
                     display();
                     printf("COUNT=%d\n", count);
                     break;
+
             case 4: printf("Enter position to be searched: ");
                     scanf("%d", &pos);
                     searchByPos(pos);
                     display();
                     break;
-            case 5: exit(0);
+
+            case 5: printf("Exiting..\n");
+                    exit(0);
+
             default: printf("Invalid choice\n");
         }
     }
